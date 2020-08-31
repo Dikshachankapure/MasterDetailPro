@@ -1,0 +1,66 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="demo.ZMasterDetaikPro.controller.detail"
+	xmlns:html="http://www.w3.org/1999/xhtml" xmlns:f="sap.ui.layout.form">
+	<App>
+		<pages>
+			<Page title="Detail Page">
+				<content>
+					<VBox class="sapUiSmallMargin">
+						<f:SimpleForm id="SimpleFormChange354" editable="true" layout="ResponsiveGridLayout" labelSpanXL="3" labelSpanL="3" labelSpanM="3"
+							labelSpanS="12" adjustLabelSpan="false" emptySpanXL="4" emptySpanL="4" emptySpanM="4" emptySpanS="0" columnsXL="1" columnsL="1" columnsM="1"
+							singleContainerFullSize="false">
+							<f:content>
+								<Label text="ID"/>
+								<Text id="txtid"/>
+								<Label text="Name"/>
+								<Text id="Txtname"/>
+								<Label text="Description"/>
+								<Text id="txtdesc"/>
+								<Label text="ReleaseDate"/>
+								<Text id="txtdate"/>
+								<Label text="Rating"/>
+								<Text id="txtrate"/>
+								<Label text="Price"/>
+								<Text id="txtprice"/>
+							</f:content>
+						</f:SimpleForm>
+					</VBox>
+					<IconTabBar id="idIconTabBarMulti" expanded="{device>/isNoPhone}" class="sapUiResponsiveContentPadding">
+						<items>
+							<IconTabFilter icon="sap-icon://hint">
+								<f:SimpleForm id="SimpleForm2" editable="true" layout="ResponsiveGridLayout" labelSpanXL="4" labelSpanL="4" labelSpanM="4" labelSpanS="12"
+									adjustLabelSpan="false" emptySpanXL="1" emptySpanL="1" emptySpanM="1" emptySpanS="0" columnsXL="1" columnsL="1" columnsM="1"
+									singleContainerFullSize="false">
+									<f:content>
+										<Label text="Name"/>
+										<Text id="txtNAmeN"/>
+										<Label text="Description"/>
+										<Text id="txtdescp"/>
+									</f:content>
+								</f:SimpleForm>
+							</IconTabFilter>
+							<IconTabFilter icon="sap-icon://notes">
+								<f:SimpleForm id="SimpleForm1" editable="true" layout="ResponsiveGridLayout" labelSpanXL="4" labelSpanL="4" labelSpanM="4" labelSpanS="12"
+									adjustLabelSpan="false" emptySpanXL="1" emptySpanL="1" emptySpanM="1" emptySpanS="0" columnsXL="1" columnsL="1" columnsM="1"
+									singleContainerFullSize="false">
+									<f:content>
+										<Label text="Rating"/>
+										<Text id="txtRating"/>
+										<Label text="Price"/>
+										<Text id="txtPrice"/>
+									</f:content>
+								</f:SimpleForm>
+							</IconTabFilter>
+						</items>
+					</IconTabBar>
+				</content>
+				<footer>
+					<OverflowToolbar>
+						<ToolbarSpacer/>
+						<Button type="Emphasized" text="Edit" press="OnEdit"></Button>
+						<Button icon="sap-icon://delete" tooltip="Delete" type="Emphasized" press="onDelete"/>
+					</OverflowToolbar>
+				</footer>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>

@@ -1,0 +1,160 @@
+{
+	"_version": "1.12.0",
+	"sap.app": {
+		"id": "demo.ZMasterDetaikPro",
+		"type": "application",
+		"i18n": "i18n/i18n.properties",
+		"applicationVersion": {
+			"version": "1.0.0"
+		},
+		"title": "{{appTitle}}",
+		"description": "{{appDescription}}",
+		"sourceTemplate": {
+			"id": "servicecatalog.connectivityComponentForManifest",
+			"version": "0.0.0"
+		},
+		"dataSources": {
+			"OData.svc": {
+				"uri": "/OData_Org/V2/(S(fzk0cj25vbpedfgpyoup5jtg))/OData/OData.svc/",
+				"type": "OData",
+				"settings": {
+					"localUri": "localService/metadata.xml"
+				}
+			}
+		}
+	},
+	"sap.ui": {
+		"technology": "UI5",
+		"icons": {
+			"icon": "",
+			"favIcon": "",
+			"phone": "",
+			"phone@2": "",
+			"tablet": "",
+			"tablet@2": ""
+		},
+		"deviceTypes": {
+			"desktop": true,
+			"tablet": true,
+			"phone": true
+		}
+	},
+	"sap.ui5": {
+		"flexEnabled": false,
+		"rootView": {
+			"viewName": "demo.ZMasterDetaikPro.view.sapp",
+			"type": "XML",
+			"async": true,
+			"id": "idApp"
+		},
+		"dependencies": {
+			"minUI5Version": "1.65.6",
+			"libs": {
+				"sap.ui.layout": {},
+				"sap.ui.core": {},
+				"sap.m": {}
+			}
+		},
+		"contentDensities": {
+			"compact": true,
+			"cozy": true
+		},
+		"models": {
+			"i18n": {
+				"type": "sap.ui.model.resource.ResourceModel",
+				"settings": {
+					"bundleName": "demo.ZMasterDetaikPro.i18n.i18n"
+				}
+			},
+			"": {
+				"type": "sap.ui.model.odata.v2.ODataModel",
+				"settings": {
+					"defaultOperationMode": "Server",
+					"defaultBindingMode": "OneWay",
+					"defaultCountMode": "Request"
+				},
+				"dataSource": "OData.svc",
+				"preload": true
+			}
+		},
+		"resources": {
+			"css": [
+				{
+					"uri": "css/style.css"
+				}
+			]
+		},
+		"routing": {
+			"config": {
+				"routerClass": "sap.m.routing.Router",
+				"viewType": "XML",
+				"async": true,
+				"viewPath": "demo.ZMasterDetaikPro.view",
+				"controlAggregation": "pages",
+				"controlId": "idApp",
+				"clearControlAggregation": false,
+					"bypassed": {
+					"target": []
+				}
+			},
+			"routes": [
+				{
+					"pattern": "",
+					"name": "FirstPage",
+					"target": [
+						"mPage",
+						"dPage"
+					]
+				},
+				{
+					"pattern": "detail/{ID}",
+					"name": "detail",
+					"target": [
+						"mPage",
+						"dPage"
+					]
+				},
+				{
+					"pattern": "detailD/{ID}",
+					"name": "detailD",
+					"target": [
+						"mPage",
+						"dPage"
+					]
+				},
+					
+				{
+					"pattern": "detaildetail/{ID}",
+					"name": "detaildetail",
+					"target": [
+						"mPage",
+						"DPage"
+					]
+				},
+				{
+					"pattern": "DetailDetail",
+					"name": "DetailDetail",
+					"target": [
+						"mPage",
+						"DPage"
+					]
+				}
+			],
+			"targets": {
+				"mPage": {
+					"viewName": "master",
+					"controlAggregation": "masterPages"
+				},
+				"dPage": {
+					"viewName": "detail",
+					"controlAggregation": "detailPages"
+				},
+				"DPage": {
+					"viewType": "XML",
+					"viewName": "detaildetail",
+					"controlAggregation": "detailPages"
+				}
+			}
+		}
+	}
+}

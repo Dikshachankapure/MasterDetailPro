@@ -1,0 +1,42 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="demo.ZMasterDetaikPro.controller.detaildetail"
+	xmlns:html="http://www.w3.org/1999/xhtml" xmlns:f="sap.ui.layout.form">
+	<App>
+		<pages>
+			<Page title="DetailDetail" showNavButton="true" navButtonPress="OnNavBack">
+				<content>
+					<VBox class="sapUiSmallMargin">
+						<f:SimpleForm id="SimpleFormChange354" editable="true" layout="ResponsiveGridLayout" title="Add Request" labelSpanXL="3" labelSpanL="3"
+							labelSpanM="3" labelSpanS="12" adjustLabelSpan="false" emptySpanXL="4" emptySpanL="4" emptySpanM="4" emptySpanS="0" columnsXL="1"
+							columnsL="1" columnsM="1" singleContainerFullSize="false">
+							<f:content>
+								<Label text="Product ID" required="true"/>
+								<Input id="txtProID" type="Number"/>
+								<Label text="Product Name" required="true"/>
+								<Input id="txtpronm" type="Text"/>
+								<Label text="Prouct Description" required="true"/>
+								<Input id="txtProDesc" type="Text"/>
+								<Label text="Release Date" required="true"/>
+								<DateTimePicker id="txtRdate" placeholder="Release Date ..." displayFormat="long"/>
+								<Label text="Rating" required="true"/>
+								<Input id="txtRating" type="Text" maxLength="12"/>
+								<Label text="Price" labelFor="DP2"/>
+								<Input id="txtPrice" type="Text" maxLength="12"/>
+							</f:content>
+						</f:SimpleForm>
+					</VBox>
+				</content>
+				<footer>
+					<Bar>
+						<contentRight>
+							<Button id="btnSave" text="Save" visible="true" icon="sap-icon://save" press="OnSave" type="Emphasized" tooltip="Save"/>
+							<Button id="btnUpdate" text="Update" visible="false" icon="sap-icon://save" press="OnUpdate" type="Emphasized" tooltip="Update"/>
+							<!--	<Button text="Save" icon="sap-icon://save" press="OnSave" type="Emphasized"/>-->
+							<Button text="Close" icon="sap-icon://decline" press="OnClose" type="Emphasized"/>
+							<Button icon="sap-icon://reset" press="OnReset" type="Emphasized"/>
+						</contentRight>
+					</Bar>
+				</footer>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>

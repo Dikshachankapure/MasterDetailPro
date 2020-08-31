@@ -1,0 +1,201 @@
+[{
+	"ID": 2022,
+	"Name": "Name 1",
+	"Address": {
+		"Street": "Street 1",
+		"City": "City 1",
+		"State": "State 1",
+		"ZipCode": "ZipCode 1",
+		"Country": "Country 1"
+	},
+	"Concurrency": 72,
+	"__metadata": {
+		"uri": "Suppliers(2022)",
+		"type": "ODataDemo.Supplier"
+	},
+	"Products": {
+		"__deferred": {
+			"uri": "Suppliers(2022)/Products"
+		}
+	}
+}, {
+	"ID": 4881,
+	"Name": "Name 2",
+	"Address": {
+		"Street": "Street 2",
+		"City": "City 2",
+		"State": "State 2",
+		"ZipCode": "ZipCode 2",
+		"Country": "Country 2"
+	},
+	"Concurrency": 7647,
+	"__metadata": {
+		"uri": "Suppliers(4881)",
+		"type": "ODataDemo.Supplier"
+	},
+	"Products": {
+		"__deferred": {
+			"uri": "Suppliers(4881)/Products"
+		}
+	}
+}, {
+	"ID": 6070,
+	"Name": "Name 3",
+	"Address": {
+		"Street": "Street 3",
+		"City": "City 3",
+		"State": "State 3",
+		"ZipCode": "ZipCode 3",
+		"Country": "Country 3"
+	},
+	"Concurrency": 9259,
+	"__metadata": {
+		"uri": "Suppliers(6070)",
+		"type": "ODataDemo.Supplier"
+	},
+	"Products": {
+		"__deferred": {
+			"uri": "Suppliers(6070)/Products"
+		}
+	}
+}, {
+	"ID": 2919,
+	"Name": "Name 4",
+	"Address": {
+		"Street": "Street 4",
+		"City": "City 4",
+		"State": "State 4",
+		"ZipCode": "ZipCode 4",
+		"Country": "Country 4"
+	},
+	"Concurrency": 144,
+	"__metadata": {
+		"uri": "Suppliers(2919)",
+		"type": "ODataDemo.Supplier"
+	},
+	"Products": {
+		"__deferred": {
+			"uri": "Suppliers(2919)/Products"
+		}
+	}
+}, {
+	"ID": 6073,
+	"Name": "Name 5",
+	"Address": {
+		"Street": "Street 5",
+		"City": "City 5",
+		"State": "State 5",
+		"ZipCode": "ZipCode 5",
+		"Country": "Country 5"
+	},
+	"Concurrency": 9360,
+	"__metadata": {
+		"uri": "Suppliers(6073)",
+		"type": "ODataDemo.Supplier"
+	},
+	"Products": {
+		"__deferred": {
+			"uri": "Suppliers(6073)/Products"
+		}
+	}
+}, {
+	"ID": 4943,
+	"Name": "Name 6",
+	"Address": {
+		"Street": "Street 6",
+		"City": "City 6",
+		"State": "State 6",
+		"ZipCode": "ZipCode 6",
+		"Country": "Country 6"
+	},
+	"Concurrency": 9049,
+	"__metadata": {
+		"uri": "Suppliers(4943)",
+		"type": "ODataDemo.Supplier"
+	},
+	"Products": {
+		"__deferred": {
+			"uri": "Suppliers(4943)/Products"
+		}
+	}
+}, {
+	"ID": 4552,
+	"Name": "Name 7",
+	"Address": {
+		"Street": "Street 7",
+		"City": "City 7",
+		"State": "State 7",
+		"ZipCode": "ZipCode 7",
+		"Country": "Country 7"
+	},
+	"Concurrency": 6277,
+	"__metadata": {
+		"uri": "Suppliers(4552)",
+		"type": "ODataDemo.Supplier"
+	},
+	"Products": {
+		"__deferred": {
+			"uri": "Suppliers(4552)/Products"
+		}
+	}
+}, {
+	"ID": 4501,
+	"Name": "Name 8",
+	"Address": {
+		"Street": "Street 8",
+		"City": "City 8",
+		"State": "State 8",
+		"ZipCode": "ZipCode 8",
+		"Country": "Country 8"
+	},
+	"Concurrency": 2981,
+	"__metadata": {
+		"uri": "Suppliers(4501)",
+		"type": "ODataDemo.Supplier"
+	},
+	"Products": {
+		"__deferred": {
+			"uri": "Suppliers(4501)/Products"
+		}
+	}
+}, {
+	"ID": 5639,
+	"Name": "Name 9",
+	"Address": {
+		"Street": "Street 9",
+		"City": "City 9",
+		"State": "State 9",
+		"ZipCode": "ZipCode 9",
+		"Country": "Country 9"
+	},
+	"Concurrency": 49,
+	"__metadata": {
+		"uri": "Suppliers(5639)",
+		"type": "ODataDemo.Supplier"
+	},
+	"Products": {
+		"__deferred": {
+			"uri": "Suppliers(5639)/Products"
+		}
+	}
+}, {
+	"ID": 8629,
+	"Name": "Name 10",
+	"Address": {
+		"Street": "Street 10",
+		"City": "City 10",
+		"State": "State 10",
+		"ZipCode": "ZipCode 10",
+		"Country": "Country 10"
+	},
+	"Concurrency": 1383,
+	"__metadata": {
+		"uri": "Suppliers(8629)",
+		"type": "ODataDemo.Supplier"
+	},
+	"Products": {
+		"__deferred": {
+			"uri": "Suppliers(8629)/Products"
+		}
+	}
+}]
